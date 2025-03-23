@@ -1,23 +1,19 @@
-# biopython-scripts
-A collection of Biopython scripts for practicing sequence analysis, parsing biological file formats (FASTA, GenBank, etc.), and exploring genomic data. 
+Biopython Scripts
+A collection of Biopython scripts for practicing sequence analysis, parsing biological file formats (FASTA, GenBank, etc.), and exploring genomic data.
 
-# GenBank File Parsing Script
+Features
+? Parses GenBank files to extract gene metadata and CDS details (location, strand, product, translation).
+? Parses FASTA files to display sequence information with a length check (truncating long sequences).
+? Handles user input for file selection and provides error handling for invalid or empty files.
 
-This repository contains a Python script that parses GenBank files to extract key information, such as gene names, product descriptions, and CDS (coding sequences) from a GenBank file.
+Scripts Included
+?? GenBank Parser – Extracts gene ID, description, sequence length, and CDS details.
+?? FASTA Parser – Reads FASTA files, prints sequence metadata, and limits sequence display to 50 characters.
 
-## Project Overview
-
-The script reads a GenBank file, extracts relevant metadata, and displays it in a user-friendly format. It specifically identifies and extracts features of interest, such as:
-- Gene ID
-- Gene Description
-- Length of the sequence
-- CDS (Coding Sequence) location, strand, gene name, product, and translation
-
-.
-
-## Features
-- Reads GenBank files and parses them efficiently using `BioPython`.
-- Extracts gene-related information, including gene names, descriptions, and CDS features.
-- Handles user input for specifying the GenBank file.
-
+Usage
+Run a script with a file name as an argument or enter it manually:
+bash
+CopyEdit
+python genbank_parser.py example.gb  
+python fasta_parser.py example.fasta  
 

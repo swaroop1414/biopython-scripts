@@ -29,4 +29,4 @@ except FileNotFoundError:
 except ValueError as e:
     print(f"Error: {e}. Please check the file format. Excepted 'genbank' format.")
 except Exception as e:
-    print(f"An error occured; {e}")
+    print(f"An error occured: {e}")
